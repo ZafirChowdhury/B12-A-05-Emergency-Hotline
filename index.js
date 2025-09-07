@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function() {{
     const heartCount = document.getElementById("heart-count");
     const coinCount = document.getElementById("coin-count");
     const copyCount = document.getElementById("copy-count")
-    const history = [];
 
     const hearts = document.getElementsByClassName("heart");
     for (heart of hearts) {
@@ -25,14 +24,24 @@ document.addEventListener("DOMContentLoaded", function() {{
             const callInfoList = event.target.parentNode.parentNode.getElementsByTagName("h1");
             const serviceName = callInfoList[0].innerText;
             const serviceNumber = callInfoList[1].innerText;
+            const time = new Date().toLocaleTimeString();
 
-            alert(`Service Name: ${serviceName}, Service Number: ${serviceNumber}`);
+            alert(`Calling ${serviceName} ${serviceNumber}...`);
             
-            history.push({
-                serviceName, 
-                serviceNumber,
-                date: new Date()
-            });
+            const callHistoryContainer = document.getElementById("call-history-container");
+
+            const newCallHistory = document.createElement("div");
+            newCallHistory.innerHTML = `
+                <div class="flex justify-between gap-3 items-center p-4 rounded-lg bg-[#fafafa] mb-3">
+                    <div class="left">
+                        <h3 class="text-[16px] text-black font-semibold">${serviceName}</h3>
+                        <p class="text-[18px] text-gray-500">${serviceNumber}</p>
+                    </div>
+                    <p class="text-gray-900 text-[18px]">${time}</p>
+                </div>
+            `;
+
+            callHistoryContainer.appendChild(newCallHistory);
         });
     };
 
@@ -47,14 +56,13 @@ document.addEventListener("DOMContentLoaded", function() {{
             .parentNode
             .getElementsByTagName("h1")[1].innerHTML;
 
-            alert(`Service Number ${serviceNumber} Copyed to clipbord!`);
+            alert(`Service Number ${serviceNumber} copyed to clipbord!`);
             navigator.clipboard.writeText(serviceNumber);
         });
     }
 
     const clearButton = document.getElementById("clear-button");
     clearButton.addEventListener("click", function() {
-        history.length = 0;
+        document.getElementById("call-history-container").innerHTML = "";
     });
-
 }});
