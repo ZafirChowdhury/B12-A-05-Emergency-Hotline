@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {{
     const heartCount = document.getElementById("heart-count");
     const coinCount = document.getElementById("coin-count");
+    const copyCount = document.getElementById("copy-count")
     const history = [];
 
     const hearts = document.getElementsByClassName("heart");
@@ -29,10 +30,25 @@ document.addEventListener("DOMContentLoaded", function() {{
             
             history.push({
                 serviceName, 
-                serviceNumber
+                serviceNumber,
+                date: new Date()
             });
+        });
+    };
 
-            console.log(history);
+    const copyButtons = document.getElementsByClassName("copy-button");
+    for (copyButton of copyButtons) {
+        copyButton.addEventListener("click", function(event) {
+            copyCount.innerHTML = parseInt(copyCount.innerText) + 1;
+            
+            const serviceNumber = event
+            .target
+            .parentNode
+            .parentNode
+            .getElementsByTagName("h1")[1].innerHTML;
+
+            alert(`Service Number ${serviceNumber} Copyed`);
+            navigator.clipboard.writeText(serviceNumber);
         });
     }
 }});

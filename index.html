@@ -45,7 +45,7 @@
             </div>
             <button class="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors">
 
-                <span id="copy-count"> 2 </span> Copy
+                <span id="copy-count"> 0 </span> Copy
             
             </button>
         </div>
@@ -63,12 +63,14 @@
 
     <!-- Main -->
     <main class="max-w-[1440px] grid md:grid-cols-12 gap-5 mx-auto mt-[50px]">
-        <!-- Cards -->
+        <!-- Cards Container -->
         <div class="cards content grid gap-4  md:col-span-9">
             
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
 
-                <!-- cards -->
+                <!-- Cards -->
+
+                <!-- National Emergency Number -->
                 <div class="rounded-2xl shadow-sm p-6 bg-white">
                     <div class="icons flex justify-between items-center mb-7">
                         <div class="bg-red-200 p-3 rounded-2xl"><img src="./assets/emergency.png" class="w-8 " alt=""></div>
@@ -83,9 +85,39 @@
                         <button class="call-button bg-green-500 w-[50%] rounded-lg py-3 text-white"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
+
+                <!-- Police Helpline Number -->
+                <div class="rounded-2xl shadow-sm p-6 bg-white">
+                    <div class="icons flex justify-between items-center mb-7">
+                        <div class="bg-red-200 p-3 rounded-2xl"><img src="./assets/police.png" class="w-8 " alt=""></div>
+                        <i class="heart fa-regular fa-heart text-3xl text-gray-500"></i>
+                    </div>
+                    <h1 class="text-2xl font-extrabold">Police Helpline Number</h1> 
+                    <p class="text-gray-400 text-[18px]">Police</p>
+                    <h1 class="text-3xl font-bold mt-6 mb-2">999</h1>
+                    <button class="bg-gray-200 text-gray-500 font-semibold px-4 py-2 rounded-3xl">Police</button>
+                    <div class="flex gap-3 mt-6">
+                        <button class="copy-button bg-white text-gray-400 py-3 border-1 border-gray-400 w-[50%] rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="call-button bg-green-500 w-[50%] rounded-lg py-3 text-white"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
+
+                <!-- Police Helpline Number -->
+                <div class="rounded-2xl shadow-sm p-6 bg-white">
+                    <div class="icons flex justify-between items-center mb-7">
+                        <div class="bg-red-200 p-3 rounded-2xl"><img src="./assets/fire-service.png" class="w-8 " alt=""></div>
+                        <i class="heart fa-regular fa-heart text-3xl text-gray-500"></i>
+                    </div>
+                    <h1 class="text-2xl font-extrabold">Fire Service Number</h1> 
+                    <p class="text-gray-400 text-[18px]">Fire Service</p>
+                    <h1 class="text-3xl font-bold mt-6 mb-2">999</h1>
+                    <button class="bg-gray-200 text-gray-500 font-semibold px-4 py-2 rounded-3xl">Fire</button>
+                    <div class="flex gap-3 mt-6">
+                        <button class="copy-button bg-white text-gray-400 py-3 border-1 border-gray-400 w-[50%] rounded-lg"><i class="fa-regular fa-copy"></i> Copy</button>
+                        <button class="call-button bg-green-500 w-[50%] rounded-lg py-3 text-white"><i class="fa-solid fa-phone"></i> Call</button>
+                    </div>
+                </div>
         </div>
-
-
     </main>
 
 </body>
