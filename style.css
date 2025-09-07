@@ -1,51 +1,51 @@
 .icon-container {
-            width: 44px;
-            height: 44px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            border-radius: 8px;
-        }
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 8px;
+}
         
-        .icon-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-        
-        .logo-container {
-            width: 36px;
-            height: 36px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            border-radius: 50%;
-        }
-        
-        .logo-image {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            object-position: center;
-        }
-        
-        .emblem-container {
-            width: 56px;
-            height: 56px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            overflow: hidden;
-            border-radius: 50%;
-            margin: 0 auto;
-        }
-        
-        .emblem-image {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            object-position: center;
-        }
+.icon-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.logo-container {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.emblem-container {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.emblem-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}

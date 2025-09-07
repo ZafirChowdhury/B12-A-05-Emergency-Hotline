@@ -47,8 +47,14 @@ document.addEventListener("DOMContentLoaded", function() {{
             .parentNode
             .getElementsByTagName("h1")[1].innerHTML;
 
-            alert(`Service Number ${serviceNumber} Copyed`);
+            alert(`Service Number ${serviceNumber} Copyed to clipbord!`);
             navigator.clipboard.writeText(serviceNumber);
         });
     }
+
+    const clearButton = document.getElementById("clear-button");
+    clearButton.addEventListener("click", function() {
+        history.length = 0;
+    });
+
 }});

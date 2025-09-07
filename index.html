@@ -65,11 +65,8 @@
     <main class="max-w-[1440px] grid md:grid-cols-12 gap-5 mx-auto mt-[50px]">
         <!-- Cards Container -->
         <div class="cards content grid gap-4  md:col-span-9">
-            
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
                 <!-- Cards -->
-
                 <!-- National Emergency Number -->
                 <div class="rounded-2xl shadow-sm p-6 bg-white">
                     <div class="icons flex justify-between items-center mb-7">
@@ -102,7 +99,7 @@
                     </div>
                 </div>
 
-                <!-- Police Helpline Number -->
+                <!-- Fire Service Helpline Number -->
                 <div class="rounded-2xl shadow-sm p-6 bg-white">
                     <div class="icons flex justify-between items-center mb-7">
                         <div class="bg-red-200 p-3 rounded-2xl"><img src="./assets/fire-service.png" class="w-8 " alt=""></div>
@@ -117,6 +114,19 @@
                         <button class="call-button bg-green-500 w-[50%] rounded-lg py-3 text-white"><i class="fa-solid fa-phone"></i> Call</button>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="sidebar  md:col-span-3 bg-white">
+            <div class="flex justify-between p-5">
+                <h1 class="text-[20px] font-bold"><i class="fa-regular fa-clock"></i> Call History</h1>
+                <button id="clear-button" class="bg-green-600 rounded-[30px] px-7 py-3 text-white">Clear</button>
+            </div>
+            <!-- sidebar cards -->
+            <div class="p-2" id="call-history-container">
+
+            </div>
+
         </div>
     </main>
 
